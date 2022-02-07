@@ -7,7 +7,6 @@ const expressjwt = require("express-jwt")
 const secret = process.env.SECRET || "Bobs Burger"
 
 
-
 const PORT = process.env.PORT || 9000;
 // ... other imports
 const path = require("path")
