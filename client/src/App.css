@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0px;
+  margin-bottom: 0;
+  background-color: #f6f7f1;
+  color: black;
+}
+
+
+.wrapper {
+  display: grid;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 200px 500px;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 500px 300px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+  bottom: 0;
+}
+
+.footerBox {
+  background-color: #00314f;
+  opacity: 0.8;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 70px;
+  bottom: 0;
+  color: whitesmoke;
+
+}
+
+
+.formWrapper {
+  display: inline-block;
+  width: 300px;
+  grid-column: 2/3;
+  grid-row: 3/3;
+  border-radius: 10px;
+  width: fit-content;
+  height: 420px;
+  box-shadow: #003890 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+h1 {
+  font-family: "Oranienbaum", serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Oranienbaum", serif;
+  grid-column: 2/3;
+  font-size: 22px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+}
+button {
+  background-color: #003890;
+  border-radius: 5px;
+  border: 1px;
+  border-color: whitesmoke;
+  border: none;
+  color: #b6bed3;
+}
+
+link{
+  color: wheat;
+}
+
+form {
+  margin-left: 3px;
+  width: 400px;
+  padding-top: 3px;
+  background-color: #f6f7f1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column: 2/3;
+  color: #00314f;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  border-radius: 5px;
+  height: 300px;
+}
+
+input {
+  margin-bottom: 7px;
+  margin-left: 4px;
+  border: none;
+  border-bottom: 1px solid #00314f;
+}
+input:focus {
+  border-bottom: 1px solid #db9487;
+}
+
+
+.navBar {
+  background-color: #003890;
+ grid-column: 1/4;
+ grid-row: 1/1;
+ list-style: none;
+ padding-top: 10px;
+font-family: "Monda", sans-serif;
+ font-weight: 600;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #b6bed3;
+  padding: 7px 300px;
+  text-decoration: none;
+  grid-row: 1/1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+/* Change the link color  on hover */
+li a:hover {
+  text-decoration: underline #f6f7f1;
+color: black;
+  background-color: #b6bed3;
+  transition: 2s;
+}
+
+.profile{
+
+  grid-row: 2/3;
+  grid-column: 2/3;
+
+}
+
+.topics{
+  overflow-y: auto;
+  height: 400px;
+  width: 700px;
+  font-family: "Oranienbaum", serif;
+  grid-column: 2/3;
+  grid-row: 3/3;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #87a5c1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #071724;
+  border-radius: 10px;
+}
+
+.issue{
+  border-top:1px solid #FB3640;
+  border-bottom:1px solid #FB3640;
+  background-color: #F2E5D7;
+}
+
+h2{
+  text-align: center;
+}
+
+.publicIssues{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-top: 10px;
+  overflow-y: auto;
+  height: 600px;
+  width: max-content;
+  background-color: #EAFFDA;
+  color: black;
+ 
+}
+
+/* .pissue{
+  font-family: 'Zilla Slab', serif;
+  font-weight: 300;
+    margin-top: 5px;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed deeppink;
+} */
+
+
+h4{
+  font-family: 'Monda', sans-serif;
+
+}
+
+.userIssues{
+  color: black;
+  background-color: whitesmoke;
+  list-style: none;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  width: 400px;
+}
+
+.sortedIssue{
+  overflow-y: scroll;
+  height: 500px;
+
+}
+ .sortedIssue  button {
+   display: none;
+   background-color: #00314f;
+ }
