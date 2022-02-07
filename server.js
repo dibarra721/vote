@@ -14,12 +14,11 @@ app.use(express.static(path.join(__dirname, "client", "build")))
 
 
 
-
 app.use(express.json())
 app.use(morgan('dev'))
 
 mongoose.connect(
-  'mongodb://localhost:27017/rockthevotedb',
+  process.env.MONGODB_URI || "mongodb://localhost:27017/rockthevotedb",
   {
     useNewUrlParser: true,
    
@@ -48,5 +47,5 @@ app.get("*", (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`Server is running on local port 9000`)
+  console.log(`Server is running on local port `)
 })
