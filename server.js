@@ -5,6 +5,8 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const expressjwt = require("express-jwt")
 const secret = process.env.SECRET || "Bobs Burger"
+// const bcrypt = require('bcrypt');
+
 
 
 const PORT = process.env.PORT || 9000;
