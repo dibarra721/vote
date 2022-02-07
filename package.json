@@ -8,6 +8,9 @@
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
+  "engines": {
+    "node": "14.17.6"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,8 +23,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.7",
     "morgan": "^1.10.0"
-  },
-  "engines": {
-    "node": "14.17.6"
+  }
 }
-}
+
