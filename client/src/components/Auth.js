@@ -29,6 +29,7 @@ export default function Auth() {
 
     return (
         <div className="formWrapper">
+            <h1>Welcome to Rock the Vote, an application where you can see what issues are trending in your community</h1>
             <h1>Rock the Vote </h1>
             {!toggle ?
                 <>
